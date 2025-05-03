@@ -1,0 +1,5 @@
+'OptionEngine' object has no attribute 'execute'
+
+Esse problema é por conta da versão 2.0 do sqlalchemy. Para resolver basta fazer downgrade da versão:
+
+python3 -m pip install --upgrade 'sqlalchemy<2.0'
